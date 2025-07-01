@@ -1,128 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="img/Logotatc.gif" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="img/Logotatc.gif" type="image/x-icon">
 </head>
 </style>
+
 <body>
-    <!-- navbar    -->
-<nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background: #336699;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+
+  <!-- navbar    -->
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background: #336699;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
         <img src="img/Logotatc.gif" width="30" class="me-3">Thai-Austrian
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">สมาชิก</a>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">สมาชิก</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ข้อมูลเพิ่มเติม
+            </a>
+            <ul class="dropdown-menu">
+              <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#RegisterModal">
+                สมัครสมาชิก
+              </a>
+          </li>
+
+          <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">หน้าหลัก</a></li>
+          <li><a class="dropdown-item" href="#">ค้นหาบทความ</a></li>
+          <li><a class="dropdown-item" href="#">อัลบั้มรูปภาพ</a></li>
+          <li><a class="dropdown-item" href="#">เพื่อนสมาชิก</a></li>
+        </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            ข้อมูลเพิ่มเติม
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">สมัครสมาชิก</a></li>
-            <li>
-                <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">หน้าหลัก</a></li>
-            <li><a class="dropdown-item" href="#">ค้นหาบทความ</a></li>
-            <li><a class="dropdown-item" href="#">อัลบั้มรูปภาพ</a></li>
-            <li><a class="dropdown-item" href="#">เพื่อนสมาชิก</a></li>
-          </ul>
+        <li class="nav-item">
+        <li class="nav-link disabled" aria-disabled="true"></li>
         </li>
         </ul>
         <ul class="navbar=nav">
-            <li class="nav-item">
-                <a href="" class="nav-link">
-                    <img src="img/house.svg">
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link">
-                    เข้าสู่ระบบ
-                </a>
-            </li>
-        </ul>
-    </div>
-  </div>
-</nav>
-<!-- Slide show -->
- <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                aria-label="Slide 5"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-                <img src="img/1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="img/2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/3.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/4.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/5.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-<!-- แถบนำทาง -->
-<div class="my-5 bg-secondary p-2">
-    <ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active btn btn-light" aria-current="page" href="#">หน่วยงานการศึกษา</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active btn btn-light mx-3" href="#">ฝ่ายบริหารมรัพยากร</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active btn btn-light mx-3" href="#">ผ่ายแผนงานและความร่วมมือ</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active btn btn-light mx-3" aria-disabled="true">ฝ่ายพัฒนากิจกรรมนักเรียน นักศึกษา</a>
-  </li>
-   <li class="nav-item">
-    <a class="nav-link active btn btn-light mx-3" aria-disabled="true">ITA/ข้อมูลสาธารณะ</a>
-  </li>
-   <li class="nav-item">
-    <a class="nav-link active btn btn-light mx-3" aria-disabled="true">ลิงค์หน่วยงานภายนอก</a>
-  </li>
-   <li class="nav-item">
-    <a class="nav-link active btn btn-light mx-3" aria-disabled="true">สมัครเรียน</a>
-  </li>
-</ul>
-</div>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <img src="img/house.svg">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#LoginModal">
+              เข้าสู่ระบบ
+            </a>
 
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slide show -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="img/1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="img/2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/4.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/5.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- แถบนำทาง -->
+  <div class="my-5 bg-secondary p-2">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active btn btn-light" aria-current="page" href="#">หน่วยงานการศึกษา</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active btn btn-light mx-3" href="#">ฝ่ายบริหารมรัพยากร</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active btn btn-light mx-3" href="#">ผ่ายแผนงานและความร่วมมือ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active btn btn-light mx-3" aria-disabled="true">ฝ่ายพัฒนากิจกรรมนักเรียน นักศึกษา</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active btn btn-light mx-3" aria-disabled="true">ITA/ข้อมูลสาธารณะ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active btn btn-light mx-3" aria-disabled="true">ลิงค์หน่วยงานภายนอก</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active btn btn-light mx-3" aria-disabled="true">สมัครเรียน</a>
+      </li>
+    </ul>
+  </div>
+  <div class="row d-grid gap-3" style="grid-template-columns: 1fr 2fr 1fr;">
+    <div class="col bg-white mb-3">
+      <div class="bg-white p-3">
+        <img src="img/Logotatc.gif" width="200" class="img-thumbnail mt-5"><br>
+        วิทยาลัยเทคนิคสัตหีบ <br>
+        193 หมู่ 3 ตำบลนาจอมเทียน <br>
+        อำเภอสัตหีบ จังหวัดชลบุรี 20250 <br>
+        โทรศัพท์ 038-238398
+      </div>
+
+      <div class="bg-white">
+        <img src="img/R.JPG">
+      </div>
+
+      <br>
+
+      <div class="bg-white">
+        <img src="img/T.JPG">
+      </div>
+
+      <div class="col bg-white">
+
+      </div>
+      <div class="col bg-white">
+
+      </div>
+    </div>
+    <!-- Modal Login -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container"></div>
+            <from action="">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">User Name</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+            </from>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal สมัครสมาชิก -->
+    <div class="modal fade" id="RegisterModal" tabindex="-1" aria-labelledby="RegisterModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-white">
+            <h5 class="modal-title" id="RegisterModalLabel">Create Account</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row mb-3">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name" required>
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name" required>
+                </div>
+              </div>
+
+              <input type="email" class="form-control mb-3" placeholder="Email" required>
+
+              <div class="row mb-3">
+                <div class="col">
+                  <input type="password" class="form-control" placeholder="Password" required>
+                </div>
+                <div class="col">
+                  <input type="password" class="form-control" placeholder="Confirm Password" required>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label>Gender:</label><br>
+                <label class="me-2"><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+              </div>
+
+              <div class="mb-3">
+                <label>Hobbies:</label><br>
+                <label class="me-2"><input type="checkbox"> Music</label>
+                <label class="me-2"><input type="checkbox"> Sports</label>
+                <label class="me-2"><input type="checkbox"> Travel</label>
+                <label><input type="checkbox"> Movies</label>
+              </div>
+
+              <div class="mb-3">
+                <label>Source of Income:</label>
+                <select class="form-select">
+                  <option selected>Employed</option>
+                  <option>Student</option>
+                  <option>Freelancer</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label>Income: <span id="incomeValue">20K</span></label>
+                <input type="range" class="form-range" min="0" max="50000" value="20000"
+                  oninput="document.getElementById('incomeValue').innerText = (this.value/1000) + 'K'">
+              </div>
+
+              <div class="mb-3">
+                <label>Upload Profile Picture:</label>
+                <input type="file" class="form-control">
+              </div>
+
+              <div class="mb-3">
+                <label>Age:</label>
+                <input type="number" class="form-control" value="18">
+              </div>
+
+              <div class="mb-3">
+                <label>Bio:</label>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-success">Create</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
 
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
